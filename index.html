@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guesser</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Number Guesser</h1>
+
+    <div class="stats">
+      <div class="stat">Score: <span id="score">0</span></div>
+      <div class="stat level-box">
+        Level: <span id="level">1</span>
+        <span id="difficulty" class="difficulty-label">Easy</span>
+      </div>
+      <div class="stat">Streak: <span id="streak">0</span></div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="game-card">
+      <p id="instruction">Level 1: Guess a number between 1 and 50</p>
+      <input type="number" id="guessInput" placeholder="Enter your guess">
+      <button onclick="makeGuess()">Guess</button>
+      <p id="resultMessage"></p>
+      <p>Attempts: <span id="attemptsUsed">0</span>/<span id="maxAttempts">9</span></p>
+    </div>
+
+    <p class="footer">Challenge your mind · Level up as you improve</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
